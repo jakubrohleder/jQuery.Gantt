@@ -1299,7 +1299,7 @@
                 e.preventDefault(); // e is a jQuery Event
 
                 // attempts to normalize scroll wheel velocity
-                var delta = ( 'detail' in e ? e.detail :
+                var delta = (
                               'wheelDelta' in e.originalEvent ? - 1/120 * e.originalEvent.wheelDelta :
                               e.originalEvent.deltaY ? e.originalEvent.deltaY / Math.abs(e.originalEvent.deltaY) :
                               e.originalEvent.detail );
